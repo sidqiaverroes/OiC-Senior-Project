@@ -6,7 +6,7 @@ Ketua Kelompok: <a href="https://github.com/sidqiaverroes">Sidqi Averroes</a> - 
 Anggota 1: <a href="https://github.com/adyasena">Adya Sena Pamungkas</a> - 20/460536/TK/51125<br>
 Anggota 2: <a href="https://github.com/JunianN">Rizky Junian Nugroho</a> - 20/460564/TK/51153
 
-**Project Senior Project TI**<br>
+#### Project Senior Project TI
 Departemen Teknologi Elektro dan Teknologi Informasi<br>
 Fakultas Teknik, Universitas Gadjah Mada
 
@@ -116,5 +116,45 @@ Key Competitive Advantage & Unique Value:
 *   User-generated content analysis
 *   Collaborative moderation
 *   Data analytics
+
+</details>
+
+<details markdown="1">
+<summary><h3>Modul 2</h3></summary>
+
+#### Metodologi SDLC
+
+Dalam pengembangan aplikasi pendeteksi berita palsu, metodologi Agile lebih cocok karena proyek tersebut cenderung kompleks dan memerlukan penyesuaian selama proses pengembangan yang sangat singkat yaitu 12 minggu.
+
+#### Tujuan Produk
+
+Membantu user dalam memilah informasi yang tersebar di internet dan membedakan antara berita yang benar dan palsu. Tujuan lainnya adalah untuk membantu meningkatkan kesadaran masyarakat tentang pentingnya verifikasi informasi sebelum mempercayai dan menyebarkan berita tersebut.
+
+#### Pengguna Potensial dan Kebutuhan Pengguna
+
+Pengguna potensial dari produk adalah masyarakat umum terutama pengguna layanan internet yang membutuhkan kebenaran dari informasi yang dibaca secara akurat dan terpercaya.
+
+#### Use Case Diagram
+
+<img src="docs/assets/images/UseCaseDiagram.jpg" class="img-responsive" alt="Use Case Diagram">
+
+#### Functional Requirements
+
+| FR   | Deskripsi                                                       |
+| ---- | --------------------------------------------------------------- |
+| FR 1 | Pengguna dapat menginput informasi dengan sesuai                |
+| FR 2 | Pengguna dapat membagikan hasil informasi yang telah divalidasi |
+| FR 3 | Sistem dapat mengidentifikasi keaslian informasi dengan akurat  |
+
+#### Entity Relationship Diagram
+
+<img src="docs/assets/images/EntityRelationshipDiagram.jpg" class="img-responsive" alt="Entity Relationship Diagram">
+
+#### Lo-Fi Wireframe
+
+
+
+#### Gantt-Chart
+
 
 </details>

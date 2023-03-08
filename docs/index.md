@@ -51,6 +51,8 @@ Sebuah aplikasi berbasis website untuk mendeteksi berita palsu.
 | Jenis Produk     | Pendeteksi keaslian berita |
 | Target Customer  | Masyarakat                 |
 
+<br>
+
 | Kelebihan                                               | Kekurangan                                                  |
 | ------------------------------------------------------- | ----------------------------------------------------------- |
 | Memberikan peringkat kredibilitas                       | Terbatas pada bahasa inggris                                |
@@ -74,6 +76,8 @@ Key Competitive Advantage & Unique Value:
 | Jenis Kompetitor | Direct                     |
 | Jenis Produk     | Pendeteksi keaslian berita |
 | Target Customer  | Masyarakat                 |
+
+<br>
 
 | Kelebihan                               | Kekurangan                               |
 | --------------------------------------- | ---------------------------------------- |
@@ -99,6 +103,8 @@ Key Competitive Advantage & Unique Value:
 | Jenis Kompetitor | Direct                     |
 | Jenis Produk     | Pendeteksi keaslian berita |
 | Target Customer  | Masyarakat                 |
+
+<br>
 
 | Kelebihan                                     | Kekurangan                                        |
 | --------------------------------------------- | ------------------------------------------------- |
@@ -134,7 +140,7 @@ Pengguna potensial dari produk adalah masyarakat umum terutama pengguna layanan 
 
 #### Use Case Diagram
 
-<img src="docs/assets/images/UseCaseDiagram.jpg" class="img-responsive" alt="Use Case Diagram">
+<img src="assets/images/UseCaseDiagram.jpg" class="img-responsive" alt="Use Case Diagram">
 
 #### Functional Requirements
 
@@ -146,13 +152,14 @@ Pengguna potensial dari produk adalah masyarakat umum terutama pengguna layanan 
 
 #### Entity Relationship Diagram
 
-<img src="docs/assets/images/EntityRelationshipDiagram.jpg" class="img-responsive" alt="Entity Relationship Diagram">
+<img src="assets/images/EntityRelationshipDiagram.jpg" class="img-responsive" alt="Entity Relationship Diagram">
 
 #### Lo-Fi Wireframe
 
 
 
 #### Gantt-Chart
+
 
 
 </details>
