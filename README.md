@@ -156,7 +156,7 @@ Pengguna potensial dari produk adalah masyarakat umum terutama pengguna layanan 
 
 #### Lo-Fi Wireframe
 
-
+https://www.figma.com/file/wj47057gM7He3C5eyYj9ln/OiC-Senpro?node-id=0%3A1&t=8VWL9G6rRWM5mlKr-1 
 
 #### Gantt-Chart
 
