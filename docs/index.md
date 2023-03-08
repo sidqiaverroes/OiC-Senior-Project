@@ -51,8 +51,6 @@ Sebuah aplikasi berbasis website untuk mendeteksi berita palsu.
 | Jenis Produk     | Pendeteksi keaslian berita |
 | Target Customer  | Masyarakat                 |
 
-<br>
-
 | Kelebihan                                               | Kekurangan                                                  |
 | ------------------------------------------------------- | ----------------------------------------------------------- |
 | Memberikan peringkat kredibilitas                       | Terbatas pada bahasa inggris                                |
@@ -76,8 +74,6 @@ Key Competitive Advantage & Unique Value:
 | Jenis Kompetitor | Direct                     |
 | Jenis Produk     | Pendeteksi keaslian berita |
 | Target Customer  | Masyarakat                 |
-
-<br>
 
 | Kelebihan                               | Kekurangan                               |
 | --------------------------------------- | ---------------------------------------- |
@@ -103,8 +99,6 @@ Key Competitive Advantage & Unique Value:
 | Jenis Kompetitor | Direct                     |
 | Jenis Produk     | Pendeteksi keaslian berita |
 | Target Customer  | Masyarakat                 |
-
-<br>
 
 | Kelebihan                                     | Kekurangan                                        |
 | --------------------------------------------- | ------------------------------------------------- |
@@ -160,6 +154,6 @@ Pengguna potensial dari produk adalah masyarakat umum terutama pengguna layanan 
 
 #### Gantt-Chart
 
-
+<img src="assets/images/GanttChart.jpg" class="img-responsive" alt="Gantt-Chart">
 
 </details>

@@ -1,14 +1,18 @@
 <h1 align="center">OiC</h1>
-<p align="center">Simple web-based application for fake news detection.</p>
+<p align="center">Simple web-based application for fake news detection. <br>
+<a href="https://sidqiaverroes.github.io/OiC-Senior-Project/">Github Page</a>
+</p>
+
 
 <h2>Kelompok Mentri</h2>
 Ketua Kelompok: <a href="https://github.com/sidqiaverroes">Sidqi Averroes</a> - 20/460568/TK/51157<br>
 Anggota 1: <a href="https://github.com/adyasena">Adya Sena Pamungkas</a> - 20/460536/TK/51125<br>
 Anggota 2: <a href="https://github.com/JunianN">Rizky Junian Nugroho</a> - 20/460564/TK/51153
 
-#### Project Senior Project TI
-Departemen Teknologi Elektro dan Teknologi Informasi<br>
+<h4 align="center">Project Senior Project TI</h4>
+<p align="center">Departemen Teknologi Elektro dan Teknologi Informasi<br>
 Fakultas Teknik, Universitas Gadjah Mada
+</p>
 
 <details markdown="1">
 <summary><h3>Modul 1</h3></summary>
@@ -156,5 +160,6 @@ Pengguna potensial dari produk adalah masyarakat umum terutama pengguna layanan 
 
 #### Gantt-Chart
 
+<img src="docs/assets/images/GanttChart.jpg" class="img-responsive" alt="Gantt-Chart">
 
 </details>
