@@ -150,7 +150,7 @@ Pengguna potensial dari produk adalah masyarakat umum terutama pengguna layanan 
 
 #### Lo-Fi Wireframe
 
-
+<img src="assets/images/LoFi.jpg" class="img-responsive" alt="Lo-Fi Wireframe">
 
 #### Gantt-Chart
 
