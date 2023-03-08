@@ -9,28 +9,28 @@ Departemen Teknologi Elektro dan Teknologi Informasi<br>
 Fakultas Teknik, Universitas Gadjah Mada
 
 <details markdown="1">
-<summary><h3>Modul 1</h3></summary>
+<summary><h3>◈ Modul 1</h3></summary>
 
-### Nama Produk
+#### Nama Produk
 
 OiC
 
-### Jenis Produk
+#### Jenis Produk
 
 Web-Based Application
 
-### Latar Belakang
+#### Latar Belakang
 
 Informasi saat ini menjadi salah satu aset yang paling berharga. Namun, terkadang kita sulit membedakan mana informasi yang kredibel dan mana yang palsu. Terutama ketika memasuki periode-periode tertentu, seperti yang sebentar lagi akan dihadapi Indonesia, yaitu Pemilu. Informasi akan dapat menjadi senjata berbahaya karena dapat memecah belah masyarakat ketika masa seperti Pemilu datang. Oleh karena itu, diperlukan suatu alat yang dapat membantu masyarakat untuk membedakan informasi nyata dan palsu.
 
-### Rumusan Permasalahan
+#### Rumusan Permasalahan
 
 *   Bagaimana mengidentifikasi suatu informasi itu asli atau palsu?
 *   Bagaimana membuat suatu sistem yang dapat membedakan informasi asli dan palsu?
 *   Bagaimana mengimplementasikan AI dalam pembuatan sistem?
 *   Bagaimana meningkatkan keakuratan sistem dalam menentukan informasi asli atau palsu?
 
-### Ide Solusi
+#### Ide Solusi
 
 Sebuah aplikasi berbasis website untuk mendeteksi berita palsu.
 
@@ -40,9 +40,9 @@ Sebuah aplikasi berbasis website untuk mendeteksi berita palsu.
 | Detection Result  | Hasil deteksi informasi apakah asli atau palsu      |
 | Share Result      | Membagikan hasil deteksi agar orang lain teredukasi |
 
-### Analisis Kompetitor
+#### Analisis Kompetitor
 
-#### Kompetitor 1
+##### Kompetitor 1
 
 | -                | -                          |
 | ---------------- | -------------------------- |
@@ -66,7 +66,7 @@ Key Competitive Advantage & Unique Value:
 *   Mempromosikan literasi media
 *   Tersedia dalam berbagai platform
 
-#### Kompetitor 2
+##### Kompetitor 2
 
 | -                | -                          |
 | ---------------- | -------------------------- |
@@ -91,7 +91,7 @@ Key Competitive Advantage & Unique Value:
 *   Integrasi API
 *   Data analytics
 
-#### Kompetitor 3
+##### Kompetitor 3
 
 | -                | -                          |
 | ---------------- | -------------------------- |
@@ -114,5 +114,45 @@ Key Competitive Advantage & Unique Value:
 *   User-generated content analysis
 *   Collaborative moderation
 *   Data analytics
+
+</details>
+
+<details markdown="1">
+<summary><h3>◈ Modul 2</h3></summary>
+
+#### Metodologi SDLC
+
+Dalam pengembangan aplikasi pendeteksi berita palsu, metodologi Agile lebih cocok karena proyek tersebut cenderung kompleks dan memerlukan penyesuaian selama proses pengembangan yang sangat singkat yaitu 12 minggu.
+
+#### Tujuan Produk
+
+Membantu user dalam memilah informasi yang tersebar di internet dan membedakan antara berita yang benar dan palsu. Tujuan lainnya adalah untuk membantu meningkatkan kesadaran masyarakat tentang pentingnya verifikasi informasi sebelum mempercayai dan menyebarkan berita tersebut.
+
+#### Pengguna Potensial dan Kebutuhan Pengguna
+
+Pengguna potensial dari produk adalah masyarakat umum terutama pengguna layanan internet yang membutuhkan kebenaran dari informasi yang dibaca secara akurat dan terpercaya.
+
+#### Use Case Diagram
+
+<img src="docs/assets/images/UseCaseDiagram.jpg" class="img-responsive" alt="Use Case Diagram">
+
+#### Functional Requirements
+
+| FR   | Deskripsi                                                       |
+| ---- | --------------------------------------------------------------- |
+| FR 1 | Pengguna dapat menginput informasi dengan sesuai                |
+| FR 2 | Pengguna dapat membagikan hasil informasi yang telah divalidasi |
+| FR 3 | Sistem dapat mengidentifikasi keaslian informasi dengan akurat  |
+
+#### Entity Relationship Diagram
+
+<img src="docs/assets/images/EntityRelationshipDiagram.jpg" class="img-responsive" alt="Entity Relationship Diagram">
+
+#### Lo-Fi Wireframe
+
+
+
+#### Gantt-Chart
+
 
 </details>
