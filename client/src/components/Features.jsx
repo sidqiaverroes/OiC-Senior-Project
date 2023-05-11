@@ -15,7 +15,7 @@ function Features() {
           </div>
 
           <div className="flex flex-row gap-8 text-black">
-            <div className=" max-w-xs flex flex-col bg-purple-600 p-8 rounded-3xl justify-center items-center text-white text-center hover:-translate-y-2 transition-transform">
+            <div className=" max-w-xs flex flex-col bg-purple-600 p-8 rounded-3xl justify-center items-center text-white text-center hover:-translate-y-2 shadow-lg hover:shadow-xl transition-transform">
               <div className=" overflow-hidden w-48 h-48 rounded-full bg-purple-900">
                 <img
                   src={FeatureImg1}
@@ -31,7 +31,7 @@ function Features() {
               </p>
             </div>
 
-            <div className=" max-w-xs flex flex-col bg-yellow-400 p-8 rounded-3xl justify-center items-center text-purple-900 text-center hover:-translate-y-2 transition-transform">
+            <div className=" max-w-xs flex flex-col bg-yellow-400 p-8 rounded-3xl justify-center items-center text-purple-900 text-center hover:-translate-y-2 shadow-lg hover:shadow-xl transition-transform">
               <div className=" overflow-hidden w-48 h-48 rounded-full bg-orange-500">
                 <img
                   src={FeatureImg2}
