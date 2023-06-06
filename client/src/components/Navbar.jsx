@@ -1,12 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar(props) {
   const [open, setOpen] = React.useState(false);
 
-  const scrollToContact = () => {
-    const contactSection = document.getElementById("Contact");
-    contactSection.scrollIntoView({ behavior: "smooth" });
+  const handleScrollTo = (event) => {
+    event.preventDefault();
+    const targetId = event.target.getAttribute("href").slice(1);
+    const scrollTo = document.getElementById(targetId);
+
+    if (scrollTo) {
+      scrollTo.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -56,39 +61,43 @@ function Navbar() {
                 Home
               </Link>
               <a
-                href="#"
+                href="#About"
+                onClick={handleScrollTo}
                 className="text-base font-medium text-gray-500 hover:text-gray-900"
               >
                 About
               </a>
               <a
-                href="#"
+                href="#Features"
+                onClick={handleScrollTo}
                 className="text-base font-medium text-gray-500 hover:text-gray-900"
               >
                 Features
               </a>
               <a
-                href="#"
+                href="#Wiki"
                 className="text-base font-medium text-gray-500 hover:text-gray-900"
               >
                 Wiki
               </a>
               <a
                 href="#Contact"
-                onClick={scrollToContact}
+                onClick={handleScrollTo}
                 className="text-base font-medium text-gray-500 hover:text-gray-900"
               >
                 Contact
               </a>
             </nav>
-            <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-              <Link
-                to="/seek"
-                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-12 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-purple-600 hover:bg-purple-700"
-              >
-                Seek Now
-              </Link>
-            </div>
+            {props.type && (
+              <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                <Link
+                  to="/seek"
+                  className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-12 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-purple-600 hover:bg-purple-700"
+                >
+                  Seek Now
+                </Link>
+              </div>
+            )}
           </div>
         </div>
         {/*
@@ -105,7 +114,7 @@ function Navbar() {
         <div
           className={
             open
-              ? "opacity-100 scale-100 transition ease-out duration-200 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+              ? "opacity-100 scale-100 transition ease-out duration-200 absolute top-0 inset-x-0 p-2 transform origin-top-right md:hidden"
               : "opacity-0 scale-95 absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
           }
         >
@@ -177,7 +186,7 @@ function Navbar() {
                   </a>
                   <a
                     href="#Contact"
-                    onClick={scrollToContact}
+                    onClick={handleScrollTo}
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                   >
                     <span className="ml-3 text-base font-medium text-gray-900">

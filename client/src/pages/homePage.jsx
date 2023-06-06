@@ -7,7 +7,7 @@ import Contact from "../components/Contact";
 function homePage() {
   return (
     <>
-      <Navbar />
+      <Navbar type="home" />
       <Hero />
       <About />
       <Features />

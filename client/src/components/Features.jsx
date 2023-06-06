@@ -4,17 +4,19 @@ import FeatureImg2 from "../assets/Feature-2.png";
 
 function Features() {
   return (
-    <div className="flex h-auto bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex gap-8 lg:flex-row py-20">
-        <div className="flex flex-row gap-4 justify-center items-center">
-          <div className=" max-w-lg flex flex-col gap-2 text-purple-900 pr-32">
-            <p className=" text-gray-800 font-bold">Our Features</p>
-            <p className="font-extrabold text-4xl break-words">
+    <div id="Features" className="flex h-auto bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex lg:flex-row py-20">
+        <div className="flex flex-col md:flex-row gap-8 justify-center items-center">
+          <div className=" max-w-lg flex flex-col gap-2 text-purple-900 md:pr-32">
+            <p className=" text-gray-800 font-bold text-center md:text-left">
+              Our Features
+            </p>
+            <p className="font-extrabold text-center md:text-left text-4xl break-words">
               What Things Do We Provide?
             </p>
           </div>
 
-          <div className="flex flex-row gap-8 text-black">
+          <div className="flex flex-col m-8 md:m-0 md:flex-row gap-8 text-black">
             <div className=" max-w-xs flex flex-col bg-purple-600 p-8 rounded-3xl justify-center items-center text-white text-center hover:-translate-y-2 shadow-lg hover:shadow-xl transition-transform">
               <div className=" overflow-hidden w-48 h-48 rounded-full bg-purple-900">
                 <img
