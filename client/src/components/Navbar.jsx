@@ -4,9 +4,8 @@ import { Link } from "react-router-dom";
 function Navbar(props) {
   const [open, setOpen] = React.useState(false);
 
-  const handleScrollTo = (event) => {
+  const handleScrollTo = (event, targetId) => {
     event.preventDefault();
-    const targetId = event.target.getAttribute("href").slice(1);
     const scrollTo = document.getElementById(targetId);
 
     if (scrollTo) {
@@ -21,7 +20,7 @@ function Navbar(props) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="#">
+              <a href="/">
                 <span className=" font-black text-purple-900 text-3xl">
                   OiC
                 </span>
@@ -60,16 +59,12 @@ function Navbar(props) {
               >
                 Home
               </Link>
-              <a
-                href="#About"
-                onClick={handleScrollTo}
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
-              >
+              <Link className="text-base font-medium text-gray-500 hover:text-gray-900">
                 About
-              </a>
+              </Link>
               <a
                 href="#Features"
-                onClick={handleScrollTo}
+                onClick={(e) => handleScrollTo(e, "Features")}
                 className="text-base font-medium text-gray-500 hover:text-gray-900"
               >
                 Features
@@ -82,7 +77,7 @@ function Navbar(props) {
               </a>
               <a
                 href="#Contact"
-                onClick={handleScrollTo}
+                onClick={(e) => handleScrollTo(e, "Contact")}
                 className="text-base font-medium text-gray-500 hover:text-gray-900"
               >
                 Contact
@@ -186,7 +181,7 @@ function Navbar(props) {
                   </a>
                   <a
                     href="#Contact"
-                    onClick={handleScrollTo}
+                    onClick={(e) => handleScrollTo(e, "Contact")}
                     className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                   >
                     <span className="ml-3 text-base font-medium text-gray-900">
