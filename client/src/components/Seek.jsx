@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Seek() {
+export default function Seek() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-8 py-24">
       <div className="flex flex-col justify-center items-center h-96">
@@ -22,16 +23,17 @@ function Seek() {
         </div>
 
         <div className="flex flex-row mt-6 gap-6">
-          <button className=" items-center justify-center px-12 py-2 border-transparent rounded-md shadow-sm text-base font-medium text-purple-600 border-2 border-purple-600 hover:bg-purple-700 hover:text-white">
+          <button className=" items-center justify-center px-12 py-2 rounded-md shadow-sm text-base font-medium text-purple-600 border border-purple-600 hover:bg-purple-700 hover:text-white">
             Clear All
           </button>
-          <button className=" items-center justify-center px-12 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-purple-600 hover:bg-purple-700">
+          <Link
+            to="/result"
+            className=" items-center justify-center px-12 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-purple-600 hover:bg-purple-700"
+          >
             See Result
-          </button>
+          </Link>
         </div>
       </div>
     </div>
   );
 }
-
-export default Seek;

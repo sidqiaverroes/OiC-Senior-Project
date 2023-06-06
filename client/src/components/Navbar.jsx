@@ -59,9 +59,13 @@ function Navbar(props) {
               >
                 Home
               </Link>
-              <Link className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <a
+                href="#About"
+                onClick={(e) => handleScrollTo(e, "About")}
+                className="text-base font-medium text-gray-500 hover:text-gray-900"
+              >
                 About
-              </Link>
+              </a>
               <a
                 href="#Features"
                 onClick={(e) => handleScrollTo(e, "Features")}

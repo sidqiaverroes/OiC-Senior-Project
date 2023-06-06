@@ -2,6 +2,7 @@ import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 
 import HomePage from "./pages/homePage";
 import SeekPage from "./pages/seekPage";
+import ResultPage from "./pages/resultPage";
 
 function App() {
   return (
@@ -13,6 +14,10 @@ function App() {
 
         <Routes>
           <Route path="/seek" element={<SeekPage />} />
+        </Routes>
+
+        <Routes>
+          <Route path="/result" element={<ResultPage />} />
         </Routes>
       </BrowserRouter>
     </div>
