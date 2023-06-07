@@ -5,6 +5,8 @@ import Result from "../components/Result";
 import Contact from "../components/Contact";
 
 function SeekPage() {
+  const FLASK_URL = process.env.REACT_APP_FLASK;
+
   const [result, setResult] = useState(null);
   const [error, setError] = useState(0);
 
@@ -20,7 +22,7 @@ function SeekPage() {
     } else setError(false);
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/detect-news", {
+      const response = await fetch(`${FLASK_URL}/detect-news`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

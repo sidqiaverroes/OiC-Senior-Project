@@ -3,21 +3,40 @@ import { Link } from "react-router-dom";
 import CircleProgress from "./CircleProgress";
 
 export default function Result({ result, handleSeekAgain }) {
+  const EXPRESS_URL = process.env.REACT_APP_EXPRESS;
+
   const [targetProgress, setTargetProgress] = useState(
     result.detection_result[0] * 100
   );
+  const [id, setId] = useState("");
 
-  const handleInputChange = (event) => {
-    setTargetProgress(Number(event.target.value));
-  };
+  const handleShareClick = async () => {
+    console.log(result);
+    const response = await fetch(`${EXPRESS_URL}/api/fake`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        content: result.content,
+        detection_result: result.detection_result[0],
+      }),
+    });
+    if (response) {
+      const responseData = await response.json();
+      console.log(responseData);
+      setId(responseData._id);
+      setId(responseData._id);
+    } else if (!response) {
+      alert("notfound");
+    }
 
-  const handleShareClick = () => {
     if (navigator.share) {
       navigator
         .share({
-          title: "Share Title",
-          text: "Check out this website!",
-          url: "https://www.example.com",
+          title: "The Truth Has Been Revealed!",
+          text: "I have checked that this news is fake or not. Go check it out!",
+          url: `/result/${id}`,
         })
         .then(() => console.log("Share successful."))
         .catch((error) => console.error("Error sharing:", error));
@@ -33,7 +52,6 @@ export default function Result({ result, handleSeekAgain }) {
       </div>
       <div className="flex flex-col gap-6">
         <div>
-          <input type="text" onChange={handleInputChange}></input>
           <h1 className="lg:text-left text-center text-2xl font-bold text-purple-900">
             Here comes the truth!
           </h1>

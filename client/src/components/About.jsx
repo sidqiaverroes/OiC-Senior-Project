@@ -12,13 +12,13 @@ function About() {
             <span className=" text-yellow-500">What is</span> OiC?
           </p>
           <p className="">
-            OiC adalah sebuah aplikasi web yang didesain untuk membantu user
-            dalam mengidentifikasi berita palsu atau hoax. Dalam era informasi
-            digital yang semakin kompleks, penyebaran berita palsu menjadi
-            masalah yang serius, mengancam integritas dan kepercayaan masyarakat
-            dalam menerima suatu berita. Aplikasi ini bertujuan untuk memberikan
-            solusi praktis bagi user dalam memeriksa keaslian dan kebenaran
-            suatu berita sebelum membagikan dan menyebarluaskan berita tersebut.
+            OiC is a web application designed to help users identify fake news
+            or hoaxes. In an era of increasingly complex digital information,
+            the spread of fake news is a serious problem, threatening the
+            integrity and trust of the public in receiving news. This
+            application aims to provide practical solutions for users in
+            checking the authenticity and correctness of a news before sharing
+            and disseminating the news.
           </p>
         </div>
       </div>
