@@ -1,19 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import CircleProgress from "./CircleProgress";
 
 export default function Result() {
-  return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-row gap-16 py-40 justify-center items-center">
-      <div className="flex flex-col rounded-full bg-yellow-400 w-60 h-60 justify-center items-center p-2    ">
-        <div className="flex flex-col rounded-full bg-purple-600 w-full h-full justify-center items-center">
-          <h1 className=" text-white font-black text-6xl">80%</h1>
-          <p className=" text-yellow-400">message</p>
-        </div>
-      </div>
+  const [targetProgress, setTargetProgress] = useState(70);
 
+  const handleInputChange = (event) => {
+    setTargetProgress(Number(event.target.value));
+  };
+
+  const handleShareClick = () => {
+    if (navigator.share) {
+      navigator
+        .share({
+          title: "Share Title",
+          text: "Check out this website!",
+          url: "https://www.example.com",
+        })
+        .then(() => console.log("Share successful."))
+        .catch((error) => console.error("Error sharing:", error));
+    } else {
+      console.log("Web Share API not supported.");
+    }
+  };
+
+  return (
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-16 py-40 justify-center items-center">
+      <div className="mb-12 lg:mb-0 lg:mt-2 lg:mr-24">
+        <CircleProgress targetProgress={targetProgress} />
+      </div>
       <div className="flex flex-col gap-8">
         <div>
-          <h1 className="text-2xl font-bold text-purple-900">
+          <input type="text" onChange={handleInputChange}></input>
+          <h1 className="lg:text-left text-center text-2xl font-bold text-purple-900">
             Do we help you a lot?
           </h1>
           <p>
@@ -36,7 +55,7 @@ export default function Result() {
             Seek Again
           </Link>
           <Link
-            to=""
+            onClick={handleShareClick}
             className=" items-center justify-center px-4 py-2 rounded-md shadow-sm text-base font-medium text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-700"
           >
             <i class="fa-solid fa-share"></i>
