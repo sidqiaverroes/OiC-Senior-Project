@@ -25,11 +25,10 @@ function Features() {
                   className=" object-contain"
                 ></img>
               </div>
-              <p className="font-bold text-xl mt-6">Automated Analysis</p>
-              <p className="text-xs px-4 py-2">
-                Aplikasi ini menggunakan teknologi AI untuk menganalisis
-                berbagai aspek berita, termasuk judul, teks, sumber, dan tautan
-                yang terkait.
+              <p className="font-bold text-xl mt-6">AI-Based Analysis</p>
+              <p className="text-s px-4 py-2">
+                This application uses AI technology to analyze input text with a
+                trained model.
               </p>
             </div>
 
@@ -41,11 +40,10 @@ function Features() {
                   className="object-cover object-top h-96"
                 ></img>
               </div>
-              <p className="font-bold text-xl mt-6">Share Result</p>
-              <p className="text-xs px-4 py-2">
-                Fitur Share dalam aplikasi kami memungkinkan user untuk
-                membagikan hasil deteksi berita setelah melalui proses analisis
-                dan verifikasi.
+              <p className="font-bold text-xl mt-6">Shareable Result</p>
+              <p className="text-s px-4 py-2">
+                The Share feature in our application allows users to share news
+                detection results
               </p>
             </div>
           </div>

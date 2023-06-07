@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import HomePage from "./pages/homePage";
 import SeekPage from "./pages/seekPage";
@@ -17,7 +17,7 @@ function App() {
         </Routes>
 
         <Routes>
-          <Route path="/result" element={<ResultPage />} />
+          <Route path="/result/:id" element={<ResultPage />} />
         </Routes>
       </BrowserRouter>
     </div>
