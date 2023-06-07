@@ -75,7 +75,7 @@ export default function CircularStatic(props) {
           clearInterval(timer);
           return prevProgress;
         } else {
-          return prevProgress + 5;
+          return prevProgress + 1;
         }
       });
     }, 50);

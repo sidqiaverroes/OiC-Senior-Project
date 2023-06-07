@@ -3,8 +3,10 @@ import pickle
 import os
 from tensorflow import keras
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route('/', methods=['GET'])
@@ -63,7 +65,9 @@ def detect():
 
         if request.method == "POST":
             # Get the request data
-            data = request.form.get("input_text")
+            
+            input_text = request.json
+            data = input_text.get("input_text")
             print(data)
 
             if data:

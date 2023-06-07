@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import CircleProgress from "./CircleProgress";
 
-export default function Result() {
-  const [targetProgress, setTargetProgress] = useState(70);
+export default function Result({ result, handleSeekAgain }) {
+  const [targetProgress, setTargetProgress] = useState(
+    result.detection_result[0] * 100
+  );
 
   const handleInputChange = (event) => {
     setTargetProgress(Number(event.target.value));
@@ -48,12 +50,12 @@ export default function Result() {
           >
             Give Feedback
           </Link>
-          <Link
-            to="/seek"
+          <button
+            onClick={handleSeekAgain}
             className=" items-center justify-center px-12 py-2 rounded-md shadow-sm text-base font-medium text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-700"
           >
             Seek Again
-          </Link>
+          </button>
           <Link
             onClick={handleShareClick}
             className=" items-center justify-center px-4 py-2 rounded-md shadow-sm text-base font-medium text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-700"
