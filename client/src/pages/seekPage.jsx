@@ -6,9 +6,18 @@ import Contact from "../components/Contact";
 
 function SeekPage() {
   const [result, setResult] = useState(null);
+  const [error, setError] = useState(0);
 
   const handleSubmit = async (e, inputText) => {
     e.preventDefault();
+
+    if (inputText.length > 3000) {
+      setError(1); // Set error flag
+      return;
+    } else if (inputText === "") {
+      setError(2);
+      return;
+    } else setError(false);
 
     try {
       const response = await fetch("http://127.0.0.1:5000/detect-news", {
@@ -45,7 +54,7 @@ function SeekPage() {
       {result ? (
         <Result result={result} handleSeekAgain={handleSeekAgain} />
       ) : (
-        <Seek handleSubmit={handleSubmit} />
+        <Seek handleSubmit={handleSubmit} error={error} />
       )}
 
       <Contact />

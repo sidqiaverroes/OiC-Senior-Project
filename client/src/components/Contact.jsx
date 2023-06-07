@@ -21,22 +21,22 @@ function Contact() {
 
           <div className="flex flex-col xl:flex-row gap-4">
             <div className="flex flex-col justify-between gap-4">
-              <a className="flex flex-row gap-2 py-4 px-36 rounded-lg justify-center items-center bg-gray-900 text-white hover:bg-gray-800 cursor-pointer hover:-translate-y-1 shadow-lg hover:shadow-xl transition-transform ">
+              <a className="flex flex-row gap-2 py-4 md:px-36 rounded-lg justify-center items-center bg-gray-900 text-white hover:bg-gray-800 cursor-pointer hover:-translate-y-1 shadow-lg hover:shadow-xl transition-transform ">
                 <i class="fa-solid fa-envelope"></i> <p>Email</p>
               </a>
-              <a className="flex flex-row gap-2 py-4 px-36 rounded-lg justify-center items-center bg-gray-900 text-white hover:bg-gray-800 cursor-pointer hover:-translate-y-1 shadow-lg hover:shadow-xl transition-transform ">
+              <a className="flex flex-row gap-2 py-4 md:px-36 rounded-lg justify-center items-center bg-gray-900 text-white hover:bg-gray-800 cursor-pointer hover:-translate-y-1 shadow-lg hover:shadow-xl transition-transform ">
                 <i class="fa-brands fa-whatsapp"></i> <p>Whatsapp</p>
               </a>
             </div>
 
             <div className="flex flex-col justify-between gap-4">
-              <a className="flex flex-row gap-2 py-4 px-36 rounded-lg justify-center items-center bg-gray-900 text-white hover:bg-gray-800 cursor-pointer hover:-translate-y-1 shadow-lg hover:shadow-xl transition-transform">
+              <a className="flex flex-row gap-2 py-4 md:px-36 rounded-lg justify-center items-center bg-gray-900 text-white hover:bg-gray-800 cursor-pointer hover:-translate-y-1 shadow-lg hover:shadow-xl transition-transform">
                 <i class="fa-brands fa-github"></i>
                 <p>Github</p>
               </a>
-              <a className="flex flex-row gap-2 py-4 px-36 rounded-lg justify-center items-center bg-gray-900 text-white hover:bg-gray-800 cursor-pointer hover:-translate-y-1 shadow-lg hover:shadow-xl transition-transform">
+              <a className="flex flex-row gap-2 py-4 md:px-36 rounded-lg justify-center items-center bg-gray-900 text-white hover:bg-gray-800 cursor-pointer hover:-translate-y-1 shadow-lg hover:shadow-xl transition-transform">
                 <i class="fa-brands fa-instagram"></i>
-                <p>Whatsapp</p>
+                <p>Instagram</p>
               </a>
             </div>
           </div>

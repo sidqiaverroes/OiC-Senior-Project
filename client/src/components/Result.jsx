@@ -31,19 +31,18 @@ export default function Result({ result, handleSeekAgain }) {
       <div className="mb-12 lg:mb-0 lg:mt-2 lg:mr-24">
         <CircleProgress targetProgress={targetProgress} />
       </div>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-6">
         <div>
           <input type="text" onChange={handleInputChange}></input>
           <h1 className="lg:text-left text-center text-2xl font-bold text-purple-900">
-            Do we help you a lot?
+            Here comes the truth!
           </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            cursus.
+          <p className="px-8 lg:px-0 text-center lg:text-left">
+            The percentage is the truth of the information you entered.
           </p>
         </div>
 
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-col md:flex-row gap-4 justify-center items-center lg:justify-start lg:items-start">
           <Link
             to=""
             className=" items-center justify-center px-12 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-purple-600 hover:bg-purple-700"
