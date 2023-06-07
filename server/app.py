@@ -41,12 +41,12 @@ def detect():
             news_seq = tokenn.texts_to_sequences(news)
             news_pad = keras.preprocessing.sequence.pad_sequences(
                 news_seq, maxlen=3000, padding='post', truncating='post')
-            result = (model.predict(news_pad) > 0.5).astype(int)
-            return int(result[0])
+            result = model.predict(news_pad)
+            return list(map('{:.2f}'.format, result[0]))
 
         if request.method == "GET":
             # Get the request data
-            data = "Setelah dilakukan penelusuran berita, faktanya pada tahun 2017, Manager Hukum dan Humas PTDI, Irfan Budiman pernah menyatakan isu penjualan PTDI yang tersebar di Whatsapp dan media sosial adalah tidak benar atau hoaks"
+            data = "input dummy text here for testing"
             print(data)
 
             if data:
@@ -63,7 +63,7 @@ def detect():
 
         if request.method == "POST":
             # Get the request data
-            data = "kajlhlksjahdlakjsdha asdasd"
+            data = request.form.get("input_text")
             print(data)
 
             if data:
