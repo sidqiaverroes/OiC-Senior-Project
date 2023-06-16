@@ -1,0 +1,77 @@
+group=<isikan nama resource grup yang digunakan>
+
+vnet_name=<isikan dengan nama vnet yang anda buat>
+
+vnet_subnet=<isikan dengan nama subnet yang ada di vnet>
+
+location_res=<isikan dengan lokasi vnet yang dibuat>
+
+nama=<isikan dengan nama anda>
+
+username=adminuser
+
+password='SecretPassword123!@#'
+
+  
+
+az vm availability-set create \
+
+  -n ${nama}-vm-as -l $location_res\
+
+  -g $group
+
+for NUM in 1 2 3
+
+do
+
+  az vm create -l $location_res \
+
+    -n ${nama}${NUM} \
+
+    -g $group \
+
+    --size Standard_B1s \
+
+    --image Win2019Datacenter \
+
+    --admin-username $username \
+
+    --admin-password $password \
+
+    --vnet-name $vnet_name \
+
+    --subnet ${vnet_subnet}${NUM} \
+
+    --public-ip-address "" \
+
+    --availability-set ${nama}-vm-as \
+
+	  --nsg vm-nsgdone
+
+for NUM in 1 2 3
+
+do
+
+  az vm open-port -g $group --name ${nama}${NUM} --port 80
+
+done
+
+for NUM in 1 2 3
+
+do
+
+  az vm extension set \
+
+    --name CustomScriptExtension \
+
+    --vm-name ${nama}${NUM} \
+
+    -g $group \
+
+    --publisher Microsoft.Compute \
+
+    --version 1.8 \
+
+    --settings '{"commandToExecute":"powershell Add-WindowsFeature Web-Server; powershell Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $($env:computername)"}'
+
+done
